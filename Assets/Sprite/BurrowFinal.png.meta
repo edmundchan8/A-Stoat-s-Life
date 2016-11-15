@@ -1,0 +1,197 @@
+fileFormatVersion: 2
+guid: 6b28d1b03e5b42746808713555fab162
+timeCreated: 1474767904
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: BurrowFinal_0
+    21300002: BurrowFinal_1
+    21300004: BurrowFinal_2
+    21300006: BurrowFinal_3
+    21300008: BurrowFinal_4
+    21300010: BurrowFinal_5
+    21300012: BurrowFinal_6
+    21300014: BurrowFinal_7
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: BurrowFinal_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -128, y: -68}
+        - {x: 128, y: -68}
+        - {x: 128, y: 66}
+        - {x: -128, y: 66}
+    - name: BurrowFinal_1
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 72, y: 128}
+        - {x: -128, y: 128}
+        - {x: -128, y: -128}
+        - {x: 70, y: -128}
+        - {x: 70, y: -126}
+        - {x: -54, y: 0}
+        - {x: 72, y: 126}
+    - name: BurrowFinal_2
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 60, y: -126}
+        - {x: 60, y: -128}
+        - {x: 128, y: -128}
+        - {x: 128, y: -60}
+        - {x: 126, y: -60}
+    - name: BurrowFinal_3
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 64, y: 128}
+        - {x: -128, y: -64}
+        - {x: -128, y: -128}
+        - {x: 74, y: -128}
+        - {x: 128, y: -74}
+        - {x: 128, y: 128}
+    - name: BurrowFinal_4
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 62, y: 128}
+        - {x: -128, y: 66}
+        - {x: -128, y: -68}
+        - {x: 128, y: -68}
+        - {x: 128, y: 128}
+    - name: BurrowFinal_5
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -128, y: 128}
+        - {x: -128, y: -68}
+        - {x: -116, y: -68}
+        - {x: 78, y: 126}
+        - {x: 78, y: 128}
+    - name: BurrowFinal_6
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 64, y: 128}
+        - {x: 2, y: 66}
+        - {x: -128, y: 66}
+        - {x: -128, y: -68}
+        - {x: 60, y: -128}
+        - {x: 128, y: -128}
+        - {x: 128, y: 128}
+    - name: BurrowFinal_7
+      rect:
+        serializedVersion: 2
+        x: 1792
+        y: 0
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -128, y: -118}
+        - {x: -66, y: -118}
+        - {x: 128, y: -54}
+        - {x: 128, y: 80}
+        - {x: -128, y: 80}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
