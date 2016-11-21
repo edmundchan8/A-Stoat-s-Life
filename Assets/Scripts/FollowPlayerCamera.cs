@@ -5,59 +5,35 @@ public class FollowPlayerCamera : MonoBehaviour {
 
 	[Header ("Constant Settings")]
 	[SerializeField]
-	Vector3 OFFSET;
-	Vector3 PLAYER_POSITION;
-
-	[Header ("Assessor")]
-	GameObject m_Player;
-	Transform m_PlayerBody;
-	Vector3 m_PlayerScale;
+	Vector2 VELOCITY;
+	[SerializeField]
+	float SMOOTH_TIME_X;
+	[SerializeField]
+	float SMOOTH_TIME_Y;
+	[SerializeField]
+	GameObject PLAYER;
 
 	[Header ("Other variables")]
-	Vector3 m_OffsetHolder;
 	[SerializeField]
-	int m_OffsetLeftVariable; //this should be 1
+	float mPosX;
 	[SerializeField]
-	int m_OffsetRightVariable; // this should be -1
+	float mPosY;
+
 
 	void Start () 
 	{
-		//find the player gameobject and assign it to m_Player
-		m_Player = GameObject.Find ("Player");
-		//set the vector3 position of the player to PLAYER_POSITION;
-		PLAYER_POSITION = m_Player.transform.position; 
-		OFFSET = transform.position - PLAYER_POSITION;
+		PLAYER = GameObject.Find ("Player");
 	}
 
-	void Update() 
+	void FixedUpdate() 
 	{
-		//here. we will run code every frame to check and keep a track of the player's body scale
-		m_PlayerBody = m_Player.transform.GetChild(0);
-		m_PlayerScale = m_PlayerBody.localScale;
-
-		//next, we'll what an if statement to check if the m_PlayerScale.x value is -1 (means player facing left)
-		//of is m_PlayerScale.x is 1 (means player facing right)
-		//if we also want to move the camera position to be so tha the player is not in the centre of the screen
-		if (m_PlayerScale.x > 0) 
-		{
-			m_OffsetHolder = OFFSET;
-			m_OffsetHolder.x = m_OffsetLeftVariable;
-			OFFSET = m_OffsetHolder;
-		}
-
-		else if (m_PlayerScale.x < 0) 
-		{
-			m_OffsetHolder = OFFSET;
-			m_OffsetHolder.x = m_OffsetRightVariable;
-			OFFSET = m_OffsetHolder;
-		}
+		mPosX = Mathf.SmoothDamp (transform.position.x, PLAYER.transform.position.x, ref VELOCITY.x, SMOOTH_TIME_X);
+		mPosY = Mathf.SmoothDamp (transform.position.y, PLAYER.transform.position.y, ref VELOCITY.y, SMOOTH_TIME_Y);
 	}
 
 	void LateUpdate () 
 	{
-		//once all physics movements have occurred
-		//set the camera's position to be the player position plus the offset.
-		transform.position = m_Player.transform.position + OFFSET;
+		transform.position = new Vector3 (mPosX, mPosY, transform.position.z);
 	}
 
 }
